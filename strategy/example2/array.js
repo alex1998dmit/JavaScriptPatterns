@@ -1,6 +1,5 @@
 // strategies
 function quickStrategy(arr) {
-  console.log('sorted by quick sort');
   if (arr.length < 2) return arr;
   let pivot = arr[0];
   const left = [];
@@ -13,7 +12,7 @@ function quickStrategy(arr) {
       right.push(arr[i]);
     }
   }
-  return quickSort(left).concat(pivot, quickSort(right));
+  return quickStrategy(left).concat(pivot, quickStrategy(right));
 };
 
 function bubbleStrategy(inputArr) {
@@ -89,6 +88,7 @@ const notSortFunc = function(arr) {
   return arr;
 };
 
+console.log('default strategy');
 selectSort.setArray([3,1,5,2]);
 selectSort.setStrategy(notSortFunc);
 console.log(selectSort.checkout());
