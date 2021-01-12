@@ -1,0 +1,14 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "../Downloads/ParchedOptimalDecagons/builders"
+	},
+	{
+		"path": "../Downloads/ParchedOptimalDecagons/factories"
+	}
+],
+  "settings": {}
+}

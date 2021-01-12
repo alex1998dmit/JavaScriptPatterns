@@ -4,7 +4,7 @@ let post = {
   desc: 'some desc',
   user_id: 5,
   id: 10,
-}
+};
 
 let Handler = function(){
   this.next = {
